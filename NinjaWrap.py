@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, Union
 import requests
 
 
@@ -36,8 +36,8 @@ class NinjaWrap:
         self,
         endpoint: str,
         method: str,
-        params: dict | None = None,
-        data: dict | None = None,
+        params: Union[dict, None] = None,
+        data: Union[dict, None] = None,
     ) -> requests.Response:
         """
         Makes a request to the API.
@@ -55,25 +55,25 @@ class NinjaWrap:
             headers=headers,
         )
 
-    def get(self, endpoint: str, params: dict | None = None):
+    def get(self, endpoint: str, params: Union[dict, None] = None):
         """
         Makes a `GET` request to the API.
         """
         return self._make_request(endpoint, "GET", params=params)
 
-    def post(self, endpoint: str, data: dict | None = None):
+    def post(self, endpoint: str, data: Union[dict, None] = None):
         """
         Makes a `POST` request to the API.
         """
         return self._make_request(endpoint, "POST", data=data)
 
-    def put(self, endpoint: str, data: dict | None = None):
+    def put(self, endpoint: str, data: Union[dict, None] = None):
         """
         Makes a `PUT` request to the API.
         """
         return self._make_request(endpoint, "PUT", data=data)
 
-    def patch(self, endpoint: str, data: dict | None = None):
+    def patch(self, endpoint: str, data: Union[dict, None] = None):
         """
         Makes a `PATCH` request to the API.
         """
