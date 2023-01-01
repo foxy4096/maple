@@ -2,9 +2,9 @@ from typing import Any, Union
 import requests
 
 
-class NinjaWrap:
+class Maple:
     """
-    A package for making API Wrappers for Django Ninja or Fast API 🐱‍👤
+    A package for making API Wrappers for Django Ninja or Fast API 🍁
     """
 
     BASE_URL: str = ""
