@@ -2,8 +2,9 @@ from setuptools import setup, find_packages
 
 DESCRIPTION = "A package for making API Wrappers for Django Ninja or Fast API 🍁"
 
-with open("README.md", "rb") as fh:
-    LONG_DESCRIPTION = fh.read().decode("utf-16")
+from pathlib import Path
+current_dir = Path(__file__).parent
+LONG_DESCRIPTION = (current_dir / "README.md").read_text()
 
 setup(
     name="maple",
@@ -12,6 +13,8 @@ setup(
     author_email="adityapriyadarshi669@gmail.com",
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
+    long_description_content_type='text/markdown',
+    url="https://github.com/foxy4096/maple",
     packages=find_packages(),
     install_requires=["setuptools_scm", "requests"],
     keywords=["python", "API"],
