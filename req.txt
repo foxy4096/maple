@@ -1,6 +1,7 @@
 attrs==19.3.0
 Automat==0.8.0
 bcrypt==4.0.1
+bleach==5.0.1
 blinker==1.4
 build==0.9.0
 CacheControl==0.12.11
@@ -12,6 +13,7 @@ Click==7.0
 cloud-init==20.1
 colorama==0.4.3
 command-not-found==0.3
+commonmark==0.9.1
 configobj==5.0.6
 constantly==15.1.0
 crashtest==0.4.1
@@ -24,6 +26,7 @@ docker==6.0.1
 docker-compose==1.29.2
 dockerpty==0.4.1
 docopt==0.6.2
+docutils==0.19
 dulwich==0.20.50
 entrypoints==0.3
 filelock==3.9.0
@@ -64,6 +67,7 @@ poetry-plugin-export==1.2.0
 ptyprocess==0.7.0
 pyasn1==0.4.2
 pyasn1-modules==0.2.1
+Pygments==2.14.0
 PyGObject==3.36.0
 PyHamcrest==1.9.0
 PyJWT==1.7.1
@@ -77,9 +81,12 @@ python-debian===0.1.36ubuntu1
 python-dotenv==0.21.0
 PyYAML==5.3.1
 rapidfuzz==2.13.7
+readme-renderer==37.3
 requests==2.22.0
 requests-toolbelt==0.10.1
 requests-unixsocket==0.2.0
+rfc3986==2.0.0
+rich==13.0.1
 SecretStorage==3.3.3
 service-identity==18.1.0
 shellingham==1.5.0
@@ -91,7 +98,9 @@ texttable==1.6.7
 tomli==2.0.1
 tomlkit==0.11.6
 trove-classifiers==2022.12.22
+twine==4.0.2
 Twisted==18.9.0
+typing-extensions==4.4.0
 ubuntu-advantage-tools==20.3
 ufw==0.36
 unattended-upgrades==0.1
